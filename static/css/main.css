@@ -1,22 +1,23 @@
+
 body{
-background-color: blue !important; 
+background-image: url('https://bit.ly/2TiSEJH');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 #profile-wrapper{
 	text-align: center;
 }
 
-#profile-pic{
+.profile-image{
 	width:150px;
 	height: 150px;
-	border-radius: 50%;
+	border-radius: 55%;
 	margin-left: auto;
     margin-right: auto;
 }
 
-ul{
-	padding: 0;
-    list-style-type: none;
-}
+
 
 
 .social-links ul, li{
@@ -24,7 +25,17 @@ ul{
 	display: inline-block;
 }
 
-.social{
-	width:20px;
-	height: 20px;
+.landing,.header{
+background-color:bisque;	
+}
+hr.star-light {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
