@@ -1,105 +1,297 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 
 <head>
-    <title>Chepkirui Betty</title>
-    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Theme CSS -->
+
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/main.css' %}">
 
 </head>
 
 <body>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card card-body h-100  border-info" id="profile-wrapper">
-                    <img id="profile-pic" src="{% static 'images/bett.png' %}">
-                    <hr>
-                    <h4>Hello am Betty!</h4>
-                    <p>I love coding, doing research and collaborating</p>
-                </div>
-            </div>
 
-            <div class="col-md-9">
-                <div class="card card-body h-100  border-info">
-                    <h4>My First Experience as a Developer</h4>
-                    <hr>
-                    <p>3 months after writing my first Hello World program on September 8th 2017 (While working in the
-                        marketing department) I had convinced my boss to let me take a stab at building a better version
-                        of the outdated laboratory management system my company was running on.</p>
+    <header class="header">
+        <div class="top-bar container-fluid">
 
-                    <p>Before I knew it we transitioned from the old system and we're on to mine. My newbie self was now
-                        in charge of hosting hundreds of thousands of lab samples and supporting thousands of clients.
-                    </p>
-
-                    <p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something
-                        scary.</p>
-
-                    <ul class="social-links">
-                        <li><img class="social" src="{% static 'images/facebook.png' %}"></li>
-                        <li><img class="social" src="{% static 'images/linked.png' %}"></li>
-                        <li><img class="social" src="{% static 'images/twitter.png' %}"></li>
-                        <li><img class="social" src="{% static 'images/youtube.png' %}"></li>
+            <ul class=" list-inline">
+                <li><a href="https://www.linkedin.com/in/chepkirui-betty"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/MehulKo18943279"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/chepkiruibetty"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <!--//social-->
+        </div>
+        <!--//top-bar-->
+        <div class="page-nav-space-holder hidden-xs">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class=" list-inline">
+                        <li><a class="scrollto" href="#education-section">Education</a></li>
+                        <li><a class="scrollto" href="#skills-section">Skills</a></li>
+                        <li><a class="scrollto" href="#portfolio-section">Portfolio</a></li>
+                        <li><a class="scrollto" href="#contact-section">Contact</a></li>
                     </ul>
-
+                    <!--//page-nav-->
                 </div>
             </div>
+            <div class="landing">
+                <div class="intro">
+                    <div class="container text-center">
+                        <img class="profile-image" src="{% static 'images/bett.png' %}" alt="Betty's profile image">
+                        <h1 class="name">Chepkirui Betty</h1>
+                        <div class="title">Full Stack Developer </div>
+                        <div class="profile">
+                            <p>Lover of innovation and everything related to generate new knowledge, and not only that,
+                                but
+                                share it with the community. Face problems with a smile and solve them as soon as
+                                possible.
+                                Excellent interpersonal relationships. Believer that when problems arise the team should
+                                focus
+                                on finding a solution, instead of blame someone.</p>
+                        </div>
+                        <!--//profile-->
+                    </div>
+                    <!--//container-->
+                </div>
+                <!--//intro-->
+
+                <div class="contact-info">
+                    <div class="container text-center">
+                        <ul class="list-inline">
+                            <li class="email"><i class="fa fa-envelope"></i><a
+                                    href="#">chepkiruibetty64@gmail.com</a></li>
+                            <li><i class="fa fa-phone"></i> <a href="tel: +254727325535">+254727325535</a></li>
+                            <li class="website"><i class="fa fa-globe"></i><a href="#">chepkiruibetty64.com</a></li>
+                        </ul>
+                    </div>
+                    <!--//container-->
+                </div>
+                <!--//contact-info-->
+            </div>
+
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h5>My Experience as a Developer</h5>
-                    <hr>
-                    <p>Full stack developer at FOI laboratories.</p>
-                    <p>Designed, built and managed a lab management system as a sole developer. System supported
-                        thousands of customers with a UI for Lab Admins and a customer dashboard.</p>
-                </div>
-            </div>
 
-            <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h5>What I Know</h5>
-                    <hr>
-                    <p>Python, Django, HTML/CSS, JavaScript/Jquery, React, Postgres, AWS and APIs such as google maps,
-                        JavaScript charts and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
-                    <p>PS: Working on Node JS, Mongo DB and Machine Learning.</p>
+    </header>
+    <!--//header-->
+    <br></br>
+
+    <div class="wrapper container">
+
+        <section id="education-section" class="education-section section">
+            <h2 class="section-title text-center">Education</h2>
+            <hr>
+            <div class="row">
+                <div class="item col-xs-12 col-sm-4">
+                    <div class="item-inner">
+                        <h3 class="degree">Software Development</h3>
+                        <div class="education-body"><br>
+                            Moringa School
+                        </div>
+                        <!--//education-body-->
+                        <div class="time">2018-2019</div>
+                        <div class="desc">
+                            Awarded Certificate for successfully completing flask,django module and professional
+                            development course
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+
+                <div class="item col-xs-12 col-sm-4">
+                    <div class="item-inner">
+                        <h3 class="degree">Bachelor in Business Technology</h3>
+                        <div class="education-body"><br>
+                            Cooperative University
+                        </div>
+                        <!--//education-body-->
+                        <div class="time">2015-2018</div>
+                        <div class="desc">
+                            University mainly focuses on project development,business accounts and a bit of software
+                            development
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+                <div class="item col-xs-12 col-sm-4">
+                    <div class="item-inner">
+                        <h3 class="degree">High School</h3>
+                        <div class="education-body"><br>
+                            Moi Girls' Siongiroi
+                        </div>
+                        <!--//education-body-->
+                        <div class="time">2013 - 2015</div>
+                        <div class="desc">
+                            The High School was mainly focus on the bases of science, mathematics, and Chemistry.There
+                            was also a good base on physics, mathematics and chemistry.
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+
+            </div>
+            </div>
+            
+            <!--//row-->
+        </section>
+        <!--//section-->
+        <br></br><br></br>
+
+
+        <section id="skills-section" class=" container skills-section section text-center skills">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="top-skills">
+                <h3 class="subtitle">Top Skills</h3>
+                <div class="row">
+                    <div class="item col-xs-12 col-sm-4">
+                        <div class="item-inner">
+                            <h4 class="skill-name">Python &amp; Django</h4>
+                            <div class="level">Medium, 4 months</div>
+                            <div class="desc">
+                                I've been using django for the last one year,and developing amazing and urgent websites
+                                to my clients
+                            </div>
+                        </div>
+                        <!--//item-inner-->
+                    </div>
+                    <!--//item-->
+                    <div class="item col-xs-12 col-sm-4">
+                        <div class="item-inner">
+                            <h4 class="skill-name">Flask</h4>
+                            <div class="level">Medium, 2 years</div>
+                            <div class="desc">
+                                Started as a hobbie,Then it was a mandatory course in MOringa School .Then comleted
+                                various
+                                projects in academics and some projects as assignment on canvas student platform.
+                            </div>
+                        </div>
+                        <!--//item-inner-->
+                    </div>
+                    <!--//item-->
+                    <div class="item col-xs-12 col-sm-4">
+                        <div class="item-inner">
+                            <h4 class="skill-name">HTML5,CSS,Javascript</h4>
+                            <div class="level">Advanced, 2 years</div>
+                            <div class="desc">
+                                I've been working with web technologies since 2 years, when I got my first live project
+                                to make hotel management system website from my TM<br> <b>Rose Oketch</b>.My Worsksample
+                                is
+                                <br> <a href="https://github.com/chepkiruibetty/Hotel-management-system.github.io">Seron
+                                    Hotel </a>
+                            </div>
+                        </div>
+                        <!--//item-inner-->
+                    </div>
+                    <!--//item-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//top-skills-->
+
+            <div class="other-skills">
+                <h3 class="subtitle">Other Skills</h3>
+                <div class="misc-skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PHP</span>
+
+                    <br>
+
+
+                    <span class="skill-tag">MYSQL</span>
+                    <span class="skill-tag">Database</span>
+                    <span class="skill-tag">Git</span>
+
+
+                    <span class="skill-tag">Angular JS</span>
+
                 </div>
             </div>
+            <!--//other-skills-->
+
+        </section>
+        <!--//skills-section-->
+
+        <section class="portfolio margin" id="portfolio">
+            <div class="container">
+                <h2 class="text-center text-uppercase text-white mb-0">Portfolio</h2>
+                <hr class="star-light mb-5 text-white">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Description for the Project</p>
+                                <a href="#" class="btn btn-primary">Github or Project Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Description for the Project</p>
+                                <a href="#" class="btn btn-primary">Github or Project Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Description for the Project</p>
+                                <a href="#" class="btn btn-primary">Github or Project Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 4</h5>
+                                <p class="card-text">Description for the Project</p>
+                                <a href="#" class="btn btn-primary">Github or Project Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    
+    <!--//wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <small class="copyright">Copyright @ <a href="#">Chepkirui Betty </a></small>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h5>How I Learn</h5>
-                    <hr>
-                    <p>Reverse Engineer & Build Ugly Prototypes First.</p>
-
-                    <p>I can learn just about anything by having a final product to tear apart piece by piece. I break
-                        the code where I need to figure out why things work the way they do. Documentation is just a
-                        reference.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h5>My Short Term Goals</h5>
-                    <hr>
-                    <p>After almost two years of supporting my system at the lab I’m ready to learn something new. I'll
-                        collaborating and sharing my experience with others on my blog (SayHelloWorld.co) & youtube
-                        channel.</p>
-                    <p>Aside from building small projects I would love to enter a position where I can be part of a
-                        bigger team & learn from others with more experience than myself.</p>
-
-                </div>
-            </div>
-        </div>
-        <br>
-    </div>
+        <!--//container-->
+    </footer>
 
 
 </body>
